@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro Display:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full relative bg-primary-0 overflow-hidden flex flex-col items-end justify-start pt-0 px-0 pb-[60px] box-border leading-[normal] tracking-[normal] text-left text-13xl text-primary-500 font-semibold-type16"
+    >
+      <header
+        class="self-stretch bg-primary-0 flex flex-row items-start justify-center py-[50.5px] px-5 box-border gap-[12px] max-w-[101%] shrink-0 text-left text-13xl text-secondary-500 font-heading-bold-32"
+      >
+        <div class="flex flex-col items-start justify-start pt-1 px-0 pb-0">
+          <img
+            class="w-8 h-8 relative"
+            loading="lazy"
+            alt=""
+            src="/public/command.svg"
+          />
+        </div>
+        <h1
+          class="m-0 w-[537px] relative text-inherit leading-[125%] font-bold font-inherit inline-block whitespace-nowrap max-w-full"
+        >
+          High Fidelity Dashboard - Home Rent
+        </h1>
+      </header>
+      <div
+        class="self-stretch bg-primary-0 box-border overflow-hidden flex flex-row items-start justify-between pt-[38px] pb-[34px] pr-[33px] pl-[59px] max-w-[101%] shrink-0 gap-[20px] border-[1px] border-solid border-lightsteelblue mq750:pl-[29px] mq750:box-border mq1050:flex-wrap mq1050:justify-center"
+      >
+        <div
+          class="w-[704px] flex flex-row items-start justify-center gap-[64px] max-w-full mq750:flex-wrap mq750:gap-[32px] mq450:gap-[16px]"
+        >
+          <h1
+            class="m-0 w-[148px] relative text-inherit tracking-[-0.03em] leading-[150%] font-bold font-inherit flex items-center shrink-0 mq450:text-lgi mq450:leading-[29px] mq1050:text-7xl mq1050:leading-[38px]"
+          >
+            MORENT
+          </h1>
+          <div
+            class="flex-1 rounded-51xl bg-primary-0 box-border flex flex-row items-start justify-between py-2 pr-[21px] pl-[19px] min-w-[217px] max-w-full gap-[20px] border-[1px] border-solid border-lightsteelblue"
+          >
+            <div
+              class="h-11 w-[492px] relative rounded-51xl bg-primary-0 box-border hidden max-w-full border-[1px] border-solid border-lightsteelblue"
+            ></div>
+            <div
+              class="w-[193px] flex flex-row items-start justify-start gap-[20px]"
+            >
+              <img
+                class="h-6 w-6 relative min-h-[24px] z-[1]"
+                alt=""
+                src="/public/searchnormal.svg"
+              />
+
+              <input
+                class="w-[calc(100%_-_48px)] [border:none] [outline:none] bg-[transparent] h-[22px] flex-1 flex flex-col items-start justify-start pt-0.5 px-0 pb-0 box-border font-semibold-type16 font-medium text-sm text-slategray min-w-[89px]"
+                placeholder="Search something here"
+                type="text"
+              />
+            </div>
+            <img
+              class="h-6 w-6 relative min-h-[24px] z-[1]"
+              alt=""
+              src="/public/vuesaxlinearfilter.svg"
+            />
+          </div>
+        </div>
+        <div class="flex flex-row items-start justify-start gap-[20px]">
+          <img
+            class="h-11 w-11 relative min-h-[44px]"
+            loading="lazy"
+            alt=""
+            src="/public/like.svg"
+          />
+
+          <img
+            class="h-11 w-11 relative min-h-[44px]"
+            loading="lazy"
+            alt=""
+            src="/public/notification.svg"
+          />
+
+          <img
+            class="h-11 w-11 relative min-h-[44px]"
+            loading="lazy"
+            alt=""
+            src="/public/settings.svg"
+          />
+
+          <img
+            class="h-11 w-11 relative object-cover min-h-[44px]"
+            loading="lazy"
+            alt=""
+            src="/public/profil@2x.png"
+          />
+        </div>
+      </div>
+      <main
+        class="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-20 box-border max-w-[101%] shrink-0 lg:pb-[34px] lg:box-border mq750:pb-[22px] mq750:box-border"
+      >
+        <section
+          class="flex-1 bg-whitesmoke overflow-hidden flex flex-col items-end justify-start pt-8 px-16 pb-16 box-border gap-[32px] max-w-full text-left text-base text-secondary-300 font-semibold-type16 lg:pt-[21px] lg:pb-[42px] lg:box-border mq750:gap-[16px] mq750:pl-8 mq750:pr-8 mq750:pb-5 mq750:box-border mq1050:pt-5 mq1050:pb-[27px] mq1050:box-border"
+        >
+          <div
+            class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px] max-w-full text-13xl text-primary-0 mq750:gap-[16px]"
+          >
+            <div
+              class="flex-1 rounded-3xs bg-information-500 overflow-hidden flex flex-col items-start justify-start pt-6 pb-28 pr-5 pl-6 box-border relative gap-[18px] min-w-[480px] max-w-full mq750:min-w-full mq450:pt-5 mq450:pb-[73px] mq450:box-border"
+            >
+              <img
+                class="w-[775px] h-[775px] absolute !m-[0] bottom-[-332px] left-[-157px]"
+                alt=""
+                src="/public/bg.svg"
+              />
+
+              <h1
+                class="m-0 w-[272px] relative text-inherit tracking-[-0.03em] leading-[150%] font-semibold font-inherit flex items-center z-[1] mq450:text-lgi mq450:leading-[29px] mq1050:text-7xl mq1050:leading-[38px]"
+              >
+                The Best Platform for Car Rental
+              </h1>
+              <div
+                class="w-[284px] relative text-base tracking-[-0.02em] leading-[150%] font-medium flex items-center z-[1]"
+              >
+                Ease of doing a car rental safely and reliably. Of course at a
+                low price.
+              </div>
+              <button
+                class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[120px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap z-[1] hover:bg-dodgerblue"
+              >
+                <div
+                  class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[80px]"
+                >
+                  Rental Car
+                </div>
+              </button>
+            </div>
+            <div
+              class="flex-1 rounded-3xs bg-primary-500 overflow-hidden flex flex-col items-start justify-start pt-6 pb-28 pr-5 pl-6 box-border relative gap-[18px] min-w-[480px] max-w-full mq750:min-w-full mq450:pt-5 mq450:pb-[73px] mq450:box-border"
+            >
+              <img
+                class="w-[758px] h-full absolute !m-[0] top-[0px] right-[-88px] bottom-[0px] max-h-full"
+                alt=""
+                src="/public/bg-1.svg"
+              />
+
+              <h1
+                class="m-0 w-[272px] relative text-inherit tracking-[-0.03em] leading-[150%] font-semibold font-inherit flex items-center z-[1] mq450:text-lgi mq450:leading-[29px] mq1050:text-7xl mq1050:leading-[38px]"
+              >
+                Easy way to rent a car at a low price
+              </h1>
+              <div
+                class="w-[284px] relative text-base tracking-[-0.02em] leading-[150%] font-medium flex items-center z-[1]"
+              >
+                Providing cheap car rental services and safe and comfortable
+                facilities.
+              </div>
+              <button
+                class="cursor-pointer [border:none] py-2.5 px-5 bg-information-500 w-[120px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap z-[1] hover:bg-cornflowerblue-100"
+              >
+                <div
+                  class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[80px]"
+                >
+                  Rental Car
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            class="self-stretch flex flex-row flex-wrap items-start justify-start pt-0 px-0 pb-1 box-border gap-[44px] max-w-full text-secondary-500 mq750:gap-[22px]"
+          >
+            <div
+              class="h-[132px] flex-1 rounded-3xs overflow-hidden flex flex-row items-start justify-start min-w-[378px] max-w-full mq750:h-auto mq750:min-w-full"
+            >
+              <div
+                class="flex-1 rounded-3xs bg-primary-0 flex flex-row items-end justify-start pt-6 px-12 pb-7 box-border gap-[8px] max-w-full mq750:flex-wrap mq750:pl-6 mq750:pr-6 mq750:box-border"
+              >
+                <div
+                  class="h-[136px] w-[582px] relative rounded-3xs bg-primary-0 hidden max-w-full"
+                ></div>
+                <div
+                  class="flex-1 flex flex-col items-start justify-start gap-[16px] max-w-full"
+                >
+                  <div
+                    class="flex flex-row items-start justify-start gap-[8px]"
+                  >
+                    <div
+                      class="flex flex-col items-start justify-start pt-0.5 px-0 pb-0"
+                    >
+                      <div
+                        class="w-4 h-4 rounded-51xl bg-royalblue flex flex-row items-center justify-center p-1 box-border z-[1]"
+                      >
+                        <div
+                          class="h-2 w-2 relative rounded-[50%] bg-primary-500"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="relative tracking-[-0.02em] leading-[20px] font-semibold inline-block min-w-[68px] z-[1]"
+                    >
+                      Pick - Up
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch h-12 flex flex-row items-start justify-start gap-[23.5px]"
+                  >
+                    <div
+                      class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                    >
+                      <b
+                        class="relative tracking-[-0.02em] leading-[150%] inline-block min-w-[77px] z-[1]"
+                        >Locations</b
+                      >
+                      <div
+                        class="self-stretch flex flex-row items-start justify-start gap-[8px] text-xs text-secondary-300"
+                      >
+                        <div
+                          class="flex-1 relative tracking-[-0.02em] font-medium z-[1]"
+                        >
+                          Select your city
+                        </div>
+                        <div
+                          class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+                        >
+                          <img
+                            class="w-3.5 h-3.5 relative z-[1]"
+                            alt=""
+                            src="/public/vuesaxoutlinearrowdown.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="h-[49px] w-px relative box-border z-[1] border-r-[1px] border-solid border-lightsteelblue"
+                    ></div>
+                    <div
+                      class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                    >
+                      <b
+                        class="w-12 relative tracking-[-0.02em] leading-[150%] flex items-center z-[1]"
+                        >Date</b
+                      >
+                      <div
+                        class="self-stretch flex flex-row items-start justify-start gap-[8px] text-xs text-secondary-300"
+                      >
+                        <div
+                          class="flex-1 relative tracking-[-0.02em] font-medium z-[1]"
+                        >
+                          Select your date
+                        </div>
+                        <div
+                          class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+                        >
+                          <img
+                            class="w-3.5 h-3.5 relative z-[1]"
+                            alt=""
+                            src="/public/vuesaxoutlinearrowdown.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="h-[49px] w-px relative box-border z-[1] border-r-[1px] border-solid border-lightsteelblue"
+                    ></div>
+                    <div
+                      class="w-[108px] flex flex-col items-start justify-start gap-[4px]"
+                    >
+                      <b
+                        class="w-12 relative tracking-[-0.02em] leading-[150%] flex items-center z-[1]"
+                        >Time</b
+                      >
+                      <div
+                        class="self-stretch relative text-xs tracking-[-0.02em] font-medium text-secondary-300 z-[1]"
+                      >
+                        Select your time
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col items-start justify-end pt-0 px-0 pb-[3px]"
+                >
+                  <img
+                    class="w-3.5 h-3.5 relative z-[1]"
+                    alt=""
+                    src="/public/vuesaxoutlinearrowdown.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="h-24 flex flex-col items-start justify-start pt-9 px-0 pb-0 box-border"
+            >
+              <img
+                class="w-[60px] h-[60px] relative object-contain"
+                loading="lazy"
+                alt=""
+                src="/public/switch.svg"
+              />
+            </div>
+            <div
+              class="h-[132px] flex-1 rounded-3xs overflow-hidden flex flex-row items-start justify-start min-w-[378px] max-w-full mq750:min-w-full"
+            >
+              <div
+                class="flex-1 rounded-3xs bg-primary-0 flex flex-col items-start justify-start pt-6 px-12 pb-7 box-border gap-[16px] max-w-full mq750:pl-6 mq750:pr-6 mq750:box-border"
+              >
+                <div
+                  class="w-[582px] h-[136px] relative rounded-3xs bg-primary-0 hidden max-w-full"
+                ></div>
+                <div class="flex flex-row items-start justify-start gap-[8px]">
+                  <div
+                    class="flex flex-col items-start justify-start pt-0.5 px-0 pb-0"
+                  >
+                    <div
+                      class="w-4 h-4 rounded-51xl bg-cornflowerblue-200 flex flex-row items-center justify-center p-1 box-border z-[1]"
+                    >
+                      <div
+                        class="h-2 w-2 relative rounded-[50%] bg-information-500"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="relative tracking-[-0.02em] leading-[20px] font-semibold inline-block min-w-[80px] z-[1]"
+                  >
+                    Drop - Off
+                  </div>
+                </div>
+                <div
+                  class="self-stretch h-12 flex flex-row items-start justify-start gap-[23.5px]"
+                >
+                  <div
+                    class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                  >
+                    <b
+                      class="relative tracking-[-0.02em] leading-[150%] inline-block min-w-[77px] z-[1]"
+                      >Locations</b
+                    >
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start gap-[8px] text-xs text-secondary-300"
+                    >
+                      <div
+                        class="flex-1 relative tracking-[-0.01em] leading-[20px] font-medium z-[1]"
+                      >
+                        Select your city
+                      </div>
+                      <div
+                        class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+                      >
+                        <img
+                          class="w-3.5 h-3.5 relative z-[1]"
+                          alt=""
+                          src="/public/vuesaxoutlinearrowdown.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="h-[49px] w-px relative box-border z-[1] border-r-[1px] border-solid border-lightsteelblue"
+                  ></div>
+                  <div
+                    class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                  >
+                    <b
+                      class="w-12 relative tracking-[-0.02em] leading-[150%] flex items-center z-[1]"
+                      >Date</b
+                    >
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start gap-[8px] text-xs text-secondary-300"
+                    >
+                      <div
+                        class="flex-1 relative tracking-[-0.02em] font-medium z-[1]"
+                      >
+                        Select your date
+                      </div>
+                      <div
+                        class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+                      >
+                        <img
+                          class="w-3.5 h-3.5 relative z-[1]"
+                          alt=""
+                          src="/public/vuesaxoutlinearrowdown.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="h-[49px] w-px relative box-border z-[1] border-r-[1px] border-solid border-lightsteelblue"
+                  ></div>
+                  <div
+                    class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                  >
+                    <b
+                      class="w-12 relative tracking-[-0.02em] leading-[150%] flex items-center z-[1]"
+                      >Time</b
+                    >
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start gap-[8px] text-xs text-secondary-300"
+                    >
+                      <div
+                        class="flex-1 relative tracking-[-0.02em] font-medium z-[1]"
+                      >
+                        Select your time
+                      </div>
+                      <div
+                        class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+                      >
+                        <img
+                          class="w-3.5 h-3.5 relative z-[1]"
+                          alt=""
+                          src="/public/vuesaxoutlinearrowdown.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-8 gap-[32px] text-center mq750:gap-[16px]"
+          >
+            <div
+              class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+            >
+              <div
+                class="self-stretch flex flex-row items-start justify-between gap-[20px] mq450:flex-wrap"
+              >
+                <div
+                  class="w-[132px] rounded flex flex-row items-start justify-start py-2.5 px-5 box-border"
+                >
+                  <div
+                    class="flex-1 relative font-semibold inline-block min-w-[92px]"
+                  >
+                    Popular Car
+                  </div>
+                </div>
+                <button
+                  class="cursor-pointer [border:none] py-2.5 px-5 bg-[transparent] w-[104px] rounded flex flex-row items-start justify-start box-border"
+                >
+                  <div
+                    class="h-6 flex-1 relative text-base font-semibold font-semibold-type16 text-primary-500 text-center flex items-center justify-center min-w-[64px]"
+                  >
+                    View All
+                  </div>
+                </button>
+              </div>
+              <div
+                class="self-stretch flex flex-row flex-wrap items-start justify-center gap-[32px] text-left text-xl text-secondary-500 mq750:gap-[16px]"
+              >
+                <div
+                  class="flex-1 rounded-3xs bg-primary-0 overflow-hidden flex flex-col items-start justify-start py-6 px-0 box-border gap-[64px] min-w-[280px] max-w-[304px] mq450:gap-[32px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-inherit tracking-[-0.03em] leading-[24px] font-bold font-inherit mq450:text-base mq450:leading-[19px]"
+                        >
+                          Koenigsegg
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] text-secondary-300"
+                          >Sport</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] text-sm text-secondary-300 mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[99px] relative">
+                      <img
+                        class="absolute top-[0px] left-[36px] w-[232px] h-[72px] object-contain"
+                        loading="lazy"
+                        alt=""
+                        src="/public/car@2x.png"
+                      />
+
+                      <div
+                        class="absolute top-[31px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              loading="lazy"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[28px]"
+                            >
+                              90L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="h-6 relative font-medium flex items-center min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              loading="lazy"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="h-6 relative font-medium flex items-center min-w-[60px]"
+                            >
+                              2 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[24px] text-xl text-secondary-500"
+                        >
+                          <b
+                            class="h-11 relative flex items-center min-w-[116px]"
+                          >
+                            <span>
+                              <span>$99.00/ </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 flex-1 rounded flex flex-row items-start justify-start whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-primary-0 overflow-hidden flex flex-col items-start justify-start py-6 px-0 box-border gap-[66px] min-w-[280px] max-w-[304px] mq450:gap-[33px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 relative text-inherit tracking-[-0.03em] leading-[24px] font-bold font-inherit inline-block min-w-[128px] mq450:text-base mq450:leading-[19px]"
+                        >
+                          Nissan GT - R
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] text-secondary-300"
+                          >Sport</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-2.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] text-sm text-secondary-300 mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[97px] relative">
+                      <img
+                        class="absolute top-[0px] left-[50px] w-[204px] h-16 object-contain"
+                        alt=""
+                        src="/public/car-2@2x.png"
+                      />
+
+                      <div
+                        class="absolute top-[29px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[20px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[28px]"
+                            >
+                              80L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="h-6 relative font-medium flex items-center min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[60px]"
+                            >
+                              2 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-end justify-start gap-[12px] text-xl text-secondary-500"
+                        >
+                          <div
+                            class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                          >
+                            <b class="self-stretch relative">
+                              <span>$80.00/ </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </b>
+                            <b
+                              class="self-stretch relative text-sm [text-decoration:line-through] text-secondary-300 whitespace-nowrap"
+                              >$100.00</b
+                            >
+                          </div>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-primary-0 overflow-hidden flex flex-col items-start justify-start py-6 px-0 box-border gap-[64px] min-w-[280px] max-w-[304px] mq450:gap-[32px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 relative text-inherit tracking-[-0.03em] leading-[24px] font-bold font-inherit inline-block min-w-[128px] mq450:text-base mq450:leading-[19px]"
+                        >
+                          Rolls - Royce
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] text-secondary-300"
+                          >Sedan</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] text-sm text-secondary-300 mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[99px] relative">
+                      <img
+                        class="absolute top-[0px] left-[42px] w-[220px] h-[68px] object-contain"
+                        alt=""
+                        src="/public/car-4@2x.png"
+                      />
+
+                      <div
+                        class="absolute top-[31px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="h-6 relative font-medium flex items-center min-w-[28px]"
+                            >
+                              70L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[60px]"
+                            >
+                              4 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[24px] text-xl text-secondary-500"
+                        >
+                          <b
+                            class="h-11 relative flex items-center min-w-[116px]"
+                          >
+                            <span>
+                              <span>$96.00/ </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 flex-1 rounded flex flex-row items-start justify-start whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-primary-0 overflow-hidden flex flex-col items-start justify-start py-6 px-0 box-border gap-[66px] min-w-[280px] max-w-[304px] mq450:gap-[33px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 relative text-inherit tracking-[-0.03em] leading-[24px] font-bold font-inherit inline-block min-w-[128px] mq450:text-base mq450:leading-[19px]"
+                        >
+                          Nissan GT - R
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] text-secondary-300"
+                          >Sport</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-2.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] text-sm text-secondary-300 mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[97px] relative">
+                      <img
+                        class="absolute top-[0px] left-[50px] w-[204px] h-16 object-contain"
+                        alt=""
+                        src="/public/car-6@2x.png"
+                      />
+
+                      <div
+                        class="absolute top-[29px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[20px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[28px]"
+                            >
+                              80L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative tracking-[-0.02em] leading-[24px] font-medium inline-block min-w-[60px]"
+                            >
+                              2 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-end justify-start gap-[12px] text-xl text-secondary-500"
+                        >
+                          <div
+                            class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                          >
+                            <b class="self-stretch relative">
+                              <span>$80.00/ </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </b>
+                            <b
+                              class="self-stretch relative text-sm [text-decoration:line-through] text-secondary-300 whitespace-nowrap"
+                              >$100.00</b
+                            >
+                          </div>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+            >
+              <div
+                class="w-[196px] rounded flex flex-row items-start justify-start py-2.5 px-5 box-border"
+              >
+                <div
+                  class="h-6 flex-1 relative font-semibold flex items-center justify-center"
+                >
+                  Recomendation Car
+                </div>
+              </div>
+              <form
+                class="m-0 self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px_30.7px] min-h-[808px] mq750:gap-[15px]"
+              >
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[50px] mq450:gap-[25px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          All New Rush
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] font-semibold-type16 text-secondary-300 text-left"
+                          >SUV</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-2.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[113px] relative">
+                      <img
+                        class="absolute top-[0px] left-[40px] w-56 h-[100px] object-contain"
+                        alt=""
+                        src="/public/car-8@2x.png"
+                      />
+
+                      <input
+                        class="[border:none] [outline:none] bg-[transparent] absolute top-[45px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[20px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                            >
+                              70L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                            >
+                              6 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-end justify-start gap-[12px]"
+                        >
+                          <div
+                            class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                          >
+                            <b
+                              class="self-stretch relative font-semibold-type16 text-left"
+                            >
+                              <span class="text-xl text-secondary-500"
+                                >$72.00/
+                              </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </b>
+                            <b
+                              class="self-stretch relative text-sm [text-decoration:line-through] font-semibold-type16 text-secondary-300 text-left whitespace-nowrap"
+                              >$80.00</b
+                            >
+                          </div>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[50px] mq450:gap-[25px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 whitespace-pre-wrap text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          CR - V
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] font-semibold-type16 text-secondary-300 text-left"
+                          >SUV</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[113px] relative">
+                      <img
+                        class="absolute top-[0px] left-[28px] w-[248px] h-[100px] object-contain"
+                        alt=""
+                        src="/public/car-10@2x.png"
+                      />
+
+                      <input
+                        class="[border:none] [outline:none] bg-[transparent] absolute top-[45px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                            >
+                              80L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="h-6 relative text-sm font-medium font-semibold-type16 text-secondary-300 text-left flex items-center min-w-[60px]"
+                            >
+                              6 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[12px]"
+                        >
+                          <b
+                            class="h-11 flex-1 relative flex font-semibold-type16 text-left items-center"
+                          >
+                            <span>
+                              <span class="text-xl text-secondary-500"
+                                >$80.00/
+                              </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[50px] mq450:gap-[25px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-[140px] flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          All New Terios
+                        </h3>
+                        <b
+                          class="w-32 relative text-sm tracking-[-0.02em] leading-[150%] flex font-semibold-type16 text-secondary-300 text-left items-center"
+                          >SUV</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-2.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[113px] relative">
+                      <img
+                        class="absolute top-[0px] left-[40px] w-56 h-[100px] object-contain"
+                        alt=""
+                        src="/public/car-12@2x.png"
+                      />
+
+                      <input
+                        class="[border:none] [outline:none] bg-[transparent] absolute top-[45px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                            >
+                              90L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                            >
+                              6 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[12px]"
+                        >
+                          <b
+                            class="h-11 flex-1 relative flex font-semibold-type16 text-left items-center"
+                          >
+                            <span>
+                              <span class="text-xl text-secondary-500"
+                                >$74.00/
+                              </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[50px] mq450:gap-[25px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 whitespace-pre-wrap text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          CR - V
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] font-semibold-type16 text-secondary-300 text-left"
+                          >SUV</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[113px] relative">
+                      <img
+                        class="absolute top-[0px] left-[28px] w-[248px] h-[100px] object-contain"
+                        alt=""
+                        src="/public/car-14@2x.png"
+                      />
+
+                      <div
+                        class="absolute top-[45px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                            >
+                              80L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                            >
+                              6 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[12px]"
+                        >
+                          <b
+                            class="h-11 flex-1 relative flex font-semibold-type16 text-left items-center"
+                          >
+                            <span>
+                              <span class="text-xl text-secondary-500"
+                                >$80.00/
+                              </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[37px] mq450:gap-[18px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start pt-0 px-6 pb-[9px]"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-40 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          MG ZX Exclusice
+                        </h3>
+                        <b
+                          class="w-32 relative text-sm tracking-[-0.02em] leading-[150%] flex font-semibold-type16 text-secondary-300 text-left items-center"
+                          >Hatchback</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="self-stretch h-[117px] relative">
+                    <img
+                      class="absolute top-[0px] left-[24px] w-[264px] h-[108px] object-contain"
+                      alt=""
+                      src="/public/car-16@2x.png"
+                    />
+
+                    <input
+                      class="[border:none] [outline:none] bg-[transparent] absolute top-[49px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                      type="text"
+                    />
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-col items-start justify-start gap-[20px]"
+                    >
+                      <div
+                        class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                      >
+                        <div
+                          class="flex flex-row items-start justify-start gap-[6px]"
+                        >
+                          <img
+                            class="h-6 w-6 relative min-h-[24px]"
+                            alt=""
+                            src="/public/vuesaxboldgasstation.svg"
+                          />
+
+                          <div
+                            class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                          >
+                            70L
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-row items-start justify-start gap-[4px]"
+                        >
+                          <img
+                            class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                            alt=""
+                            src="/public/car-1.svg"
+                          />
+
+                          <div
+                            class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                          >
+                            Manual
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-row items-start justify-start gap-[6px]"
+                        >
+                          <img
+                            class="h-6 w-6 relative min-h-[24px]"
+                            alt=""
+                            src="/public/vuesaxboldprofile2user.svg"
+                          />
+
+                          <div
+                            class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                          >
+                            4 People
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="self-stretch flex flex-row items-end justify-start gap-[12px]"
+                      >
+                        <div
+                          class="flex-1 flex flex-col items-start justify-start gap-[4px]"
+                        >
+                          <b
+                            class="self-stretch relative font-semibold-type16 text-left"
+                          >
+                            <span class="text-xl text-secondary-500"
+                              >$76.00/
+                            </span>
+                            <span class="text-sm text-secondary-300">day</span>
+                          </b>
+                          <b
+                            class="self-stretch relative text-sm [text-decoration:line-through] font-semibold-type16 text-secondary-300 text-left whitespace-nowrap"
+                            >$80.00</b
+                          >
+                        </div>
+                        <button
+                          class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                        >
+                          <div
+                            class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                          >
+                            Rent Now
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[37px] mq450:gap-[18px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start pt-0 px-6 pb-[7px]"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          New MG ZS
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] font-semibold-type16 text-secondary-300 text-left"
+                          >SUV</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-2.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="self-stretch h-[119px] relative">
+                    <img
+                      class="absolute w-[calc(100%_-_16px)] top-[0px] right-[8px] left-[8px] max-w-full overflow-hidden h-28 object-contain"
+                      alt=""
+                      src="/public/car-18@2x.png"
+                    />
+
+                    <div
+                      class="absolute top-[51px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                    ></div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                    >
+                      <div
+                        class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                      >
+                        <div
+                          class="flex flex-row items-start justify-start gap-[6px]"
+                        >
+                          <img
+                            class="h-6 w-6 relative min-h-[24px]"
+                            alt=""
+                            src="/public/vuesaxboldgasstation.svg"
+                          />
+
+                          <div
+                            class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                          >
+                            80L
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-row items-start justify-start gap-[4px]"
+                        >
+                          <img
+                            class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                            alt=""
+                            src="/public/car-1.svg"
+                          />
+
+                          <div
+                            class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                          >
+                            Manual
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-row items-start justify-start gap-[6px]"
+                        >
+                          <img
+                            class="h-6 w-6 relative min-h-[24px]"
+                            alt=""
+                            src="/public/vuesaxboldprofile2user.svg"
+                          />
+
+                          <div
+                            class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                          >
+                            6 People
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="self-stretch flex flex-row items-start justify-start gap-[12px]"
+                      >
+                        <b
+                          class="h-11 flex-1 relative flex font-semibold-type16 text-left items-center"
+                        >
+                          <span>
+                            <span class="text-xl text-secondary-500"
+                              >$80.00/
+                            </span>
+                            <span class="text-sm text-secondary-300">day</span>
+                          </span>
+                        </b>
+                        <button
+                          class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                        >
+                          <div
+                            class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                          >
+                            Rent Now
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[46px] mq450:gap-[23px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-40 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          MG ZX Excite
+                        </h3>
+                        <b
+                          class="w-32 relative text-sm tracking-[-0.02em] leading-[150%] flex font-semibold-type16 text-secondary-300 text-left items-center"
+                          >Hatchback</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[117px] relative">
+                      <img
+                        class="absolute top-[0px] left-[24px] w-[264px] h-[108px] object-contain"
+                        alt=""
+                        src="/public/car-16@2x.png"
+                      />
+
+                      <input
+                        class="[border:none] [outline:none] bg-[transparent] absolute top-[49px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                            >
+                              90L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                            >
+                              4 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[12px]"
+                        >
+                          <b
+                            class="h-11 flex-1 relative flex font-semibold-type16 text-left items-center"
+                          >
+                            <span>
+                              <span class="text-xl text-secondary-500"
+                                >$74.00/
+                              </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[304px] rounded-3xs bg-primary-0 overflow-hidden shrink-0 flex flex-col items-start justify-start py-6 px-0 box-border gap-[44px] mq450:gap-[22px] mq450:pt-5 mq450:pb-5 mq450:box-border"
+                >
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                    >
+                      <div
+                        class="w-32 flex flex-col items-start justify-start gap-[4px]"
+                      >
+                        <h3
+                          class="m-0 self-stretch relative text-xl tracking-[-0.03em] leading-[24px] font-bold font-semibold-type16 text-secondary-500 text-left mq450:text-base mq450:leading-[19px]"
+                        >
+                          New MG ZS
+                        </h3>
+                        <b
+                          class="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] font-semibold-type16 text-secondary-300 text-left"
+                          >SUV</b
+                        >
+                      </div>
+                      <img
+                        class="h-6 w-6 relative"
+                        alt=""
+                        src="/public/like-2.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-col items-start justify-start gap-[37px] mq450:gap-[18px]"
+                  >
+                    <div class="self-stretch h-[119px] relative">
+                      <img
+                        class="absolute w-[calc(100%_-_16px)] top-[0px] right-[8px] left-[8px] max-w-full overflow-hidden h-28 object-contain"
+                        alt=""
+                        src="/public/car-22@2x.png"
+                      />
+
+                      <input
+                        class="[border:none] [outline:none] bg-[transparent] absolute top-[51px] left-[0px] [background:linear-gradient(180deg,_rgba(255,_255,_255,_0),_#fff)] w-[304px] h-[68px] z-[1]"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start py-0 px-6"
+                    >
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start gap-[24px]"
+                      >
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[16px]"
+                        >
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldgasstation.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[28px]"
+                            >
+                              80L
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[4px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                              alt=""
+                              src="/public/car-1.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[48px]"
+                            >
+                              Manual
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-row items-start justify-start gap-[6px]"
+                          >
+                            <img
+                              class="h-6 w-6 relative min-h-[24px]"
+                              alt=""
+                              src="/public/vuesaxboldprofile2user.svg"
+                            />
+
+                            <div
+                              class="relative text-sm tracking-[-0.02em] leading-[24px] font-medium font-semibold-type16 text-secondary-300 text-left inline-block min-w-[60px]"
+                            >
+                              6 People
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="self-stretch flex flex-row items-start justify-start gap-[12px]"
+                        >
+                          <b
+                            class="h-11 flex-1 relative flex font-semibold-type16 text-left items-center"
+                          >
+                            <span>
+                              <span class="text-xl text-secondary-500"
+                                >$80.00/
+                              </span>
+                              <span class="text-sm text-secondary-300"
+                                >day</span
+                              >
+                            </span>
+                          </b>
+                          <button
+                            class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[116px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+                          >
+                            <div
+                              class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[76px]"
+                            >
+                              Rent Now
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="w-[734px] flex flex-row items-start justify-between gap-[20px] max-w-full text-right text-sm mq450:flex-wrap"
+          >
+            <button
+              class="cursor-pointer [border:none] py-2.5 px-5 bg-primary-500 w-[156px] rounded flex flex-row items-start justify-start box-border whitespace-nowrap hover:bg-dodgerblue"
+            >
+              <div
+                class="flex-1 relative text-base tracking-[-0.02em] leading-[150%] font-semibold font-semibold-type16 text-primary-0 text-center inline-block min-w-[116px]"
+              >
+                Show more car
+              </div>
+            </button>
+            <div
+              class="w-[140px] flex flex-col items-start justify-start pt-2.5 px-0 pb-0 box-border"
+            >
+              <div
+                class="self-stretch relative tracking-[-0.02em] leading-[24px] font-medium"
+              >
+                120 Car
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="self-stretch flex flex-row items-start justify-end py-0 pr-[59px] pl-[51px] box-border max-w-full text-left text-13xl text-primary-500 font-semibold-type16 mq750:pl-[25px] mq750:pr-[29px] mq750:box-border"
+      >
+        <div
+          class="flex-1 flex flex-col items-start justify-start gap-[35.5px] max-w-full mq750:gap-[18px]"
+        >
+          <div
+            class="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1050:flex-wrap"
+          >
+            <div
+              class="w-[292px] flex flex-col items-start justify-start gap-[12px]"
+            >
+              <h1
+                class="m-0 w-[148px] relative text-inherit tracking-[-0.03em] leading-[150%] font-bold font-inherit flex items-center mq450:text-lgi mq450:leading-[29px] mq1050:text-7xl mq1050:leading-[38px]"
+              >
+                MORENT
+              </h1>
+              <div
+                class="self-stretch relative text-base tracking-[-0.02em] leading-[150%] font-medium text-gray-100"
+              >
+                Our vision is to provide convenience and help increase your
+                sales business.
+              </div>
+            </div>
+            <div
+              class="overflow-x-auto flex flex-row items-start justify-start gap-[60px] max-w-full text-xl text-secondary-500 mq750:gap-[30px]"
+            >
+              <div
+                class="w-[152px] shrink-0 flex flex-col items-start justify-start gap-[24px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[32px] font-semibold font-inherit mix-blend-normal mq450:text-base mq450:leading-[24px]"
+                >
+                  About
+                </h3>
+                <div
+                  class="self-stretch h-[188px] relative text-base tracking-[-0.02em] leading-[150%] font-medium text-gray-100 flex items-center shrink-0 mix-blend-normal"
+                >
+                  <span>
+                    <p class="m-0">How it works</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Featured</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Partnership</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Bussiness Relation</p>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="w-[152px] shrink-0 flex flex-col items-start justify-start gap-[24px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[32px] font-semibold font-inherit mix-blend-normal mq450:text-base mq450:leading-[24px]"
+                >
+                  Community
+                </h3>
+                <div
+                  class="self-stretch h-[188px] relative text-base tracking-[-0.02em] leading-[150%] font-medium text-gray-100 flex items-center shrink-0 mix-blend-normal"
+                >
+                  <span>
+                    <p class="m-0">Events</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Blog</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Podcast</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Invite a friend</p>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="w-[152px] shrink-0 flex flex-col items-start justify-start gap-[24px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[32px] font-semibold font-inherit mix-blend-normal mq450:text-base mq450:leading-[24px]"
+                >
+                  Socials
+                </h3>
+                <div
+                  class="self-stretch h-[188px] relative text-base tracking-[-0.02em] leading-[150%] font-medium text-gray-100 flex items-center shrink-0 mix-blend-normal"
+                >
+                  <span class="[line-break:anywhere]">
+                    <p class="m-0">Discord</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Instagram</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Twitter</p>
+                    <p class="m-0">&nbsp;</p>
+                    <p class="m-0">Facebook</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="self-stretch h-px relative box-border border-t-[1px] border-solid border-gray-200"
+          ></div>
+          <div
+            class="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] text-base text-secondary-500 mq750:flex-wrap"
+          >
+            <div
+              class="w-[292px] relative tracking-[-0.02em] leading-[150%] font-semibold flex items-center shrink-0 mix-blend-normal"
+            >
+              ©2022 MORENT. All rights reserved
+            </div>
+            <div
+              class="w-[348px] flex flex-row items-start justify-start gap-[60px] max-w-full text-right mq450:flex-wrap mq450:gap-[30px]"
+            >
+              <div
+                class="flex-1 relative tracking-[-0.02em] leading-[150%] font-semibold inline-block mix-blend-normal min-w-[94px]"
+              >
+                Privacy & Policy
+              </div>
+              <div
+                class="flex-1 relative tracking-[-0.02em] leading-[150%] font-semibold inline-block mix-blend-normal min-w-[94px]"
+              >
+                Terms & Condition
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
